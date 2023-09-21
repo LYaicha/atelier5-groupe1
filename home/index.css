@@ -1,0 +1,378 @@
+/* pour tous */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Section header */
+
+/* section menu */
+header{
+    background-color: var(--vert);
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header nav{
+    display: grid;
+    padding: 1%;
+    grid-template-columns: 1fr 1fr;
+}
+
+header nav .logo{
+    /* border: 1px solid black; */
+    color: var(--blanc);
+}
+
+header nav .logo h2{
+    font-size: 30px;
+}
+
+header nav .logo h2::first-letter{
+    text-transform: uppercase;
+}
+
+header nav .logo i{
+    font-size: 5px;
+    margin-left: 2px;
+    color: var(--orange);
+}
+
+header nav .menu ul{
+    display: flex;
+    justify-content: end;
+}
+
+header nav .menu ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+header nav .menu ul li a{
+    text-decoration: none;
+    color: #a2a2a2c5;
+    font-size: 13px;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+header nav .menu ul li a:hover{
+    color: var(--blanc);
+    text-decoration: underline 2px solid var(--orange);
+}
+
+header nav .menu ul li .active{
+    text-decoration: underline 2px var(--orange);
+    color: var(--blanc);
+}
+
+header .menuContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+header .menuContainer .descript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+}
+
+header .menuContainer .descript h1{
+    margin-bottom: 3%;
+    color: var(--blanc);
+}
+
+header .menuContainer .descript p{
+    color: #44aca9;
+    font-size: 14px;
+}
+
+header .menuContainer .descript .boutons{
+    display: flex;
+    margin-top: 3%;
+}
+
+header .menuContainer .descript .boutons a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+
+header .menuContainer .descript .started button{
+    background-color: #1a9082;
+    margin-right: 30px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid #229486 !important;
+    color: var(--blanc);
+    font-size: 18px;
+}
+
+header .menuContainer .descript .watch button {
+    background-color: var(--vert);
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid #229486 !important;
+    font-weight: bold;
+    color: var(--blanc);
+    font-size: 18px;
+}
+
+header .menuContainer .descript .watch button i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+header .menuContainer .imgContent img{
+    width: 100%;
+}
+
+
+/* main */
+
+/* Menu card */
+
+.sectionCartes{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main .menuCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    gap: 80px;
+    bottom: 90px;
+}
+
+main .menuCard .card{
+    padding: 15%;
+    border-radius: 10px;
+    background-color: #008d7d;
+}
+
+main .menuCard .card p,h4{
+   text-align: center;
+}
+
+main .menuCard .card .p-icon i{
+    font-size: 50px;
+}
+
+main .menuCard .card a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--blanc);
+}
+
+/* section A propos */
+
+main .containerPropos{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main .secton-propos{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main .props{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* main .left-propos{
+    width: 48%;
+    padding: 1%;
+} */
+
+main .left-propos h1{
+    margin-bottom: 2%;
+}
+
+/* main .right-propos{
+    width: 48%;
+    padding: 1%;
+} */
+
+main .props .right-propos img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+
+main .props .left-propos img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+
+main .props .left-propos p{
+    color: var(--couleur-texte);
+}
+
+main .props .right-propos p{
+    color: var(--couleur-texte);
+}
+
+main .props .right-propos i{
+    color: var(--vert);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/* section service */
+
+.section-services{
+    background-color: #eeeeee;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container-servs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    row-gap: 40px;
+    padding: 3% 10%;
+}
+
+.container-servs .service{
+    padding: 8%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.container-servs .service h3{
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+
+.container-servs .service p{
+    color: var(--couleur-texte);
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+.container-servs .service button{
+    background-color: white;
+    border: none;
+}
+
+.container-servs .service button a{
+    text-decoration: none;
+    color: var(--vert);
+    font-size: 16px;
+}
+
+.container-servs .service button i{
+    margin-left: 5px;
+}
+
+.container-servs .service .titre{
+    border-bottom: 4px solid var(--couleur-texte);
+    padding-bottom: 1%;
+}
+
+.container-servs .service .rond{
+    width: 40px;
+    height: 40px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    /* margin-bottom: 10%; */
+}
+
+.container-servs .service .iconi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
+
+.container-servs .service i{
+    font-size: 25px;
+}
+
+.container-servs .service:hover .titre .rond{
+    color: var(--vert);
+}
+
+
+
+/* Media screen */
+@media (max-width: 700px){
+    header nav .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    header {
+            background-color: var(--vert);
+            padding-bottom: 4%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+    header nav {
+        display: grid;
+        padding: 1%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    header .menuContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 4%;
+        padding-bottom: 25%;
+    }
+
+    main .menuCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        gap: 80px;
+        bottom: 90px;
+    }
+
+    main .props {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .container-servs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        row-gap: 40px;
+        padding: 3% 10%;
+    }
+
+    header nav .menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav .logo h2 {
+        text-align: center;
+    }
+        
+    header nav .menu ul li{
+        font-size: 12px;
+        margin: 3px;
+    }
+}

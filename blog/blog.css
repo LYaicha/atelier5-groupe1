@@ -84,13 +84,14 @@ header .descriptBlog p{
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.745);
+    color: rgba(213, 212, 212, 0.936);
 }
 
 /* main */
 
 main .contentBlog{
     padding: 3% 10%;
+    background-color: rgba(196, 196, 196, 0.092);
 }
 
 main .contentBlog .container{
@@ -101,13 +102,16 @@ main .contentBlog .container{
 }
 
 main .container .blog{
-    border: 1px solid orangered;
     box-shadow: 10px var(--couleur-texte);
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
 }
 
 main .blog .img img{
     width: 100%;
     margin-bottom: 5%;
+    border-radius: 15px 15px 0 0;
 }
 
 main .blog .content{
@@ -130,6 +134,7 @@ main .blog h4{
 
 main .blog .details{
     display: flex;
+    margin-bottom: 2%;
 }
 
 main .blog .details .detImg img {
@@ -150,7 +155,7 @@ main .blog .details .detText p{
 
 main .blogTitre{
     padding: 20px 10%;
-    background-color: rgba(128, 128, 128, 0.067);
+    background-color: rgba(128, 128, 128, 0.188);
 }
 
 main .containerTitre span{
@@ -175,7 +180,6 @@ main .containerTitre .trait{
 /* footer */
 
 footer{
-    border: 1px solid red;
     padding: 3% 10%;
     background-color: var(--vert);
 }
@@ -189,7 +193,8 @@ footer .footerContainer{
 footer .foot1 h2{
    color: var(--blanc);
    margin-bottom: 15px;
-   font-size: 35px;
+   font-size: 30px;
+   font-family: Montserrat;
 }
 
 footer .foot1{

@@ -531,6 +531,13 @@ footer .copy p {
             padding-top: 100px;
         }
     
+
+    /* section Team */
+    .conteneurTeam {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 }
 
 @media (max-width: 1000px){

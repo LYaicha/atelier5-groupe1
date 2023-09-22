@@ -1,3 +1,13 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 70px;
+    scroll-snap-align: start;
+    opacity: 1;
+    transition: opacity 1s easeInOut 5s;
+}
+
+
 :root{
     --vert: #008374;
     --orange: #f85a40;

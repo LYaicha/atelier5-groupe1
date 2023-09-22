@@ -12,19 +12,47 @@
 header {
     background-color: var(--vert);
     padding-bottom: 4%;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
-header nav {
-    display: grid;
-    padding: 1%;
-    grid-template-columns: 1fr 1fr;
+header .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--vert);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+}
+
+header .navContainer ul {
+    display: flex;
+    width: 50%;
 }
 
 header nav .logo {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+
+header .navContainer .boutonTog i {
+    color: var(--blanc);
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+
+
+header nav .logo a {
     /* border: 1px solid black; */
     color: var(--blanc);
+    text-decoration: none;
 }
 
 header nav .logo h2 {
@@ -41,17 +69,17 @@ header nav .logo i {
     color: var(--orange);
 }
 
-header nav .menu ul {
+/* header nav .menu ul{
     display: flex;
     justify-content: end;
-}
+} */
 
-header nav .menu ul li {
+header .navMenu .menu li {
     list-style-type: none;
     margin: 10px;
 }
 
-header nav .menu ul li a {
+header .menu li a {
     text-decoration: none;
     color: #a2a2a2c5;
     font-size: 13px;
@@ -59,18 +87,58 @@ header nav .menu ul li a {
     font-weight: bold;
 }
 
-header nav .menu ul li a:hover {
+header .menu li a:hover {
     color: var(--blanc);
     text-decoration: underline 2px solid var(--orange);
 }
 
-header nav .menu ul li .active {
+header .menu li .active {
     text-decoration: underline 2px var(--orange);
     color: var(--blanc);
 }
 
+header .dropMenu {
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 50px;
+    width: 80%;
+    height: 0;
+    background-color: var(--orange);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header .dropMenu.open {
+    height: 320px;
+}
+
+header .dropMenu li {
+    list-style-type: none;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .dropMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+header .dropMenu li:hover {
+    text-decoration: underline 3px var(--vert);
+}
+
+header .dropMenu li .active {
+    text-decoration: underline 3px var(--vert);
+}
+
 header .blogContainer{
-    margin-top: 1%;
     padding: 8% 8%;
 }
 
@@ -106,6 +174,14 @@ main .container .blog{
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
+}
+
+main .container .blog:hover{
+    -moz-transform: scale(1.1) translate(1px, 0px);
+    -webkit-transform: scale(1.1) translate(1px, 0px);
+    -o-transform: scale(1.1) translate(1px, 0px);
+    -ms-transform: scale(1.1) translate(1px, 0px);
+    transform: scale(1.1) translate(1px, 0px);
 }
 
 main .blog .img img{
@@ -252,6 +328,15 @@ footer .copy p{
     header nav .menu {
         display: none;
     }
+
+        header .navContainer .boutonTog i {
+            display: block;
+        }
+
+                 header .blogContainer {
+                     padding: 18% 8%;
+                 }
+    
 }
 
 @media (max-width: 1000px) {
@@ -261,6 +346,18 @@ footer .copy p{
         padding-left: 10%;
         padding-right: 10%;
     }
+
+        header .navContainer .boutonTog i {
+            display: block;
+        }
+    
+        header .dropMenu {
+            display: block;
+            z-index: 1;
+        }
+                header .blogContainer {
+                    padding: 18% 8%;
+                }
 
     header nav {
         display: grid;

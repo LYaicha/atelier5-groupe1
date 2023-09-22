@@ -24,7 +24,7 @@ header .navContainer {
     background-color: var(--vert);
     z-index: 1;
     position: fixed;
-    /* overflow: hidden; */
+    left: 0;
     top: 0;
     width: 80%;
 }
@@ -36,6 +36,8 @@ header .navContainer ul {
 
 header nav .logo {
     width: 50%;
+    display: flex;
+    justify-content: left;
 }
 
 
@@ -137,7 +139,6 @@ header .dropMenu li .active {
 }
 
 header .blogContainer{
-    margin-top: 1%;
     padding: 8% 8%;
 }
 
@@ -331,6 +332,11 @@ footer .copy p{
         header .navContainer .boutonTog i {
             display: block;
         }
+
+                 header .blogContainer {
+                     padding: 18% 8%;
+                 }
+    
 }
 
 @media (max-width: 1000px) {
@@ -349,6 +355,9 @@ footer .copy p{
             display: block;
             z-index: 1;
         }
+                header .blogContainer {
+                    padding: 18% 8%;
+                }
 
     header nav {
         display: grid;

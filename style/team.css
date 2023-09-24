@@ -2,6 +2,10 @@
     padding: 3% 10%;
 }
 
+#team {
+    background-color: #afafaf34;
+}
+
 .ourTeam hr{
     width: 25px;
     border: 3px solid var(--vert);
@@ -24,6 +28,8 @@
 
 .conteneurTeam .team{
     padding: 5%;
+    background-color: white;
+    border-radius: 10px;
 
 }
 
@@ -35,13 +41,15 @@
 
 .conteneurTeam .textTeam{
     text-align: center;
-    margin-top: 4%;
+    margin-top: 10px;
     margin-bottom: 4%;
 }
 
 .conteneurTeam .linkTeam{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10%;
+    margin-top: 2%;
 }
 
 .conteneurTeam .linkTeam span{

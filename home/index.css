@@ -188,7 +188,7 @@ header .menuContainer .descript .started button{
     border: 1px solid #229486 !important;
     color: var(--blanc);
     font-size: 18px;
-    width: 90%;
+    /* width: 90%; */
 }
 
 header .menuContainer .descript .watch button {
@@ -199,7 +199,7 @@ header .menuContainer .descript .watch button {
     font-weight: bold;
     color: var(--blanc);
     font-size: 18px;
-    width: 90%;
+    /* width: 90%; */
 }
 
 header .menuContainer .descript .watch button i{
@@ -564,9 +564,18 @@ footer .copy p {
         display: block;
     }
 
+    header .descript h1{
+        text-align: center;
+    }
+
     header .menuContainer .descript .boutons {
         display: block;
         margin-top: 3%;
+    }
+
+    header .menuContainer .descript .boutons button{
+        width: 100%;
+        margin-bottom: 4%;
     }
 
     header .dropMenu {
@@ -595,20 +604,6 @@ footer .copy p {
         row-gap: 40px;
         padding: 3% 10%;
     }
-
-    /* header nav .menu ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    header nav .logo h2 {
-        text-align: center;
-    }
-        
-    header nav .menu ul li{
-        font-size: 12px;
-        margin: 3px;
-    } */
 
     footer .footerContainer {
         display: grid;

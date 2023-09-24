@@ -1,0 +1,94 @@
+* {
+    /* border:  solid red;  */
+}
+
+.aligné{
+   justify-content: center;
+   align-items: center;
+   margin-left: 570px;
+   margin-top: 50px;
+  
+}
+/* .num{
+   color: #008374;
+} */
+.tall{
+   margin-left: -200px;
+   margin-top: 20px;
+}
+.num{
+   color: #008374;
+}
+.vert{
+   color: #008374;
+}
+.pall{
+   margin-top: 20px;
+}
+.pull{
+   margin-top: 15px;
+}
+.mal{
+   margin-left: -450px;
+}
+.pole{
+   margin-left: 110px;
+   margin-top: -200px;
+   border-radius: 10px;
+   text-shadow: 12px;
+   background-color: #F8F8F8;
+   width: 495px;
+   height: 220px;
+   align-items: center;
+   padding-bottom: 100px;
+}
+.fatima{
+   height: 30px;
+   width: 490px;
+   margin-top: 25px;
+   border: none;
+   border-radius: 2px;
+   box-shadow: 50%;
+
+}
+.faty{
+   height: 30px;
+   width: 490px;
+   margin-top: 25px;
+   border: none;
+   border-radius: 2px;
+   box-shadow: 12px;
+}
+.salue{
+   height: 30px;
+   width: 490px;
+   margin-top: 25px;
+   border: none;
+   border-radius: 2px;
+   box-shadow: 12px;
+}
+.mot{
+   height: 30px;
+   width: 490px;
+   margin-top: 25px;
+   border: none;
+   border-radius: 2px;
+   box-shadow: 12px;
+}
+.male{
+   height: 30px;
+   width: 490px;
+   margin-top: 25px;
+   border: none;
+   border-radius: 2px;
+   box-shadow: 50px;
+}
+@media (max-width: 768px){ 
+   .aligné{
+       display: flex;
+       justify-items: center;
+       align-items: center;
+       flex-wrap:wrap 
+       
+   }  
+}

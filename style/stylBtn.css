@@ -1,0 +1,18 @@
+.btn{
+    height: 80px;
+    width: 80px;
+    background-color:#008374;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+/* .bi-arrow-up{
+    width: 40em;
+    color:black ;
+} */

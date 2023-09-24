@@ -188,6 +188,7 @@ header .menuContainer .descript .started button{
     border: 1px solid #229486 !important;
     color: var(--blanc);
     font-size: 18px;
+    width: 90%;
 }
 
 header .menuContainer .descript .watch button {
@@ -198,6 +199,7 @@ header .menuContainer .descript .watch button {
     font-weight: bold;
     color: var(--blanc);
     font-size: 18px;
+    width: 90%;
 }
 
 header .menuContainer .descript .watch button i{
@@ -560,6 +562,11 @@ footer .copy p {
 
     header .navContainer .boutonTog i {
         display: block;
+    }
+
+    header .menuContainer .descript .boutons {
+        display: block;
+        margin-top: 3%;
     }
 
     header .dropMenu {

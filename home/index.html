@@ -27,7 +27,7 @@
             </div>
             <div class="navMenu">
                 <ul class="menu">
-                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="../home/index.html" class="active">Home</a></li>
                     <li><a href="#propos">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -41,7 +41,7 @@
                 </div>
         
                 <div class="dropMenu">
-                    <li><a href="../menu/menu.html" class="active">Home</a></li>
+                    <li><a href="../home/index.html" class="active">Home</a></li>
                     <li><a href="#propos">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -294,7 +294,7 @@
         </section>
 
         <!-- Section our team -->
-        <section class="ourTeam">
+        <section class="ourTeam" id="team">
             <h2 class="T2">Our Team</h2>
             <hr>
         
@@ -510,56 +510,57 @@
                             <span><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></span>
                         </div>
                         <div class="textCo">
-                            <p>A108 Adm Steet, New york, NY 535022</p>
+                            <p class="item">Location:</p>
+                            <p class="itemTxt">A108 Adm Steet, New york, NY 535022</p>
                         </div>
                     </div>
                     <div class="coods">
                         <div class="icon">
-                    
+                            <span><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></span>
                         </div>
                         <div class="textCo">
-                            <p>Email:</p>
-                            <p>infoexample@gmail.com</p>
+                            <p class="item">Email:</p>
+                            <p class="itemTxt">infoexample@gmail.com</p>
                         </div>
                     </div>
                     <div class="coods">
                         <div class="icon">
-                    
+                            <span><i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i></span>
                         </div>
                         <div class="textCo">
-                            <p>Call:</p>
-                            <p>+1 5589 55448 55</p>
+                            <p class="item">Call:</p>
+                            <p class="itemTxt">+1 5589 55448 55</p>
                         </div>
                     </div>
                     <div class="coods">
                         <div class="icon">
-                    
+                            <span><i class="fa-regular fa-clock" style="color: #ffffff;"></i></span>
                         </div>
                         <div class="textCo">
-                            <p>Open Hours:</p>
-                            <p>Mon-Sat: 11AM-23PM</p>
+                            <p class="item">Open Hours:</p>
+                            <p class="item">Mon-Sat: 11AM-23PM</p>
                         </div>
                     </div>
                 </div>
-                <div class="formul">
+                <form class="formul">
                     <div class="formI1">
                         <div class="ipLeft">
-                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Name" required>
                         </div>
                         <div class="ipRight">
-                            <input type="text" placeholder="Your Email">
+                            <input type="text" placeholder="Your Email" required>
                         </div>
                     </div>
                     <div class="Subject">
                         <input type="text" placeholder="Subject">
                     </div>
                     <div class="message">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea name="" id=""  placeholder="Message" required></textarea>
                     </div>
                     <div class="bouton">
                         <button type="submit">Send Message</button>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
 

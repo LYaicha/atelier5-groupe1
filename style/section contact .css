@@ -172,13 +172,12 @@ button{
     }
 }
 
-@media screen (max-with 700px) {
+@media screen and (max-with: 700px) {
     
 
     .container-grip-fles-2{
         display: grid;
         padding: auto;
-        grid
         
         
     }

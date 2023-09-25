@@ -14,6 +14,10 @@
     border-radius: 20px;
 }
 
+.pricingContainer .central:hover{
+    transform: scale(1.1);
+}
+
 .price h2{
     text-align: center;
 }

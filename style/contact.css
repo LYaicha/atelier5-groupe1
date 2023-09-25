@@ -19,8 +19,6 @@
 
 .contentContact .contactContainer{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     background-color: white;
 }
 
@@ -75,13 +73,12 @@
 }
 
 .contactContainer .formul{
+    border: 2px solid black;
     width: 70%;
     padding: 15px;
+    overflow: hidden;
 }
 
-/* .formul .formI1,.Subject,.message,.bouton{
-    border: 1px solid red;
-} */
 
 .formul .formI1{
     overflow: hidden;
@@ -90,24 +87,30 @@
     margin-bottom: 2%;
 }
 
-.formul .formI1 input{
+.formul .formI1 input {
     width: 380px;
     padding: 15px 1px;
 }
+
+.formul .Subject input, .message textarea{
+    width: 100%;
+}
+
+
 
 .formul .Subject,.message{
     margin-bottom: 2%;
 }
 
 .formul .Subject input{
-    width: 97%;
     padding: 14px 10px;
+    width: 97%;
 }
 
 .formul .message textarea{
-    width: 96%;
     height: 100px;
     padding: 10px 15px;
+    width: 96%;
 }
 
 .formul .bouton{
@@ -123,6 +126,7 @@
     font-size: 20px;
     cursor: pointer;
     border: none;
+    border-radius: 20px;
 }
 
 
@@ -151,8 +155,10 @@
     }
 
     .contactContainer .formul {
-        width: 100%;
-        padding: 15px;
+        width: 90%;
+        /* padding: 15px; */
+        overflow: hidden;
+        margin: 0 auto;
     }
 
     .formul .formI1 {
@@ -160,27 +166,46 @@
         display: block;
         margin-bottom: 2%;
     }
-    
+
+    .formul input{
+        border: 1px solid rgb(3, 3, 3);
+    }
+
     .formul .formI1 input {
-        width: 94%;
+        width: 96%;
+        padding: 15px 1px;
+        margin-bottom: 4%;
+        padding-left: 10px;
+    }
+
+    .formul .Subject input,
+    .message textarea {
+        width: 92%;
+        padding: 10px 15px;
+        overflow: hidden;
+    }
+
+    .formul .Subject input {
+        margin-bottom: 4%;
+    }
+
+    .formul .message textarea {
+        height: 100px;
+    }
+    
+    /* .formul .formI1 input {
+        width: 98%;
         padding: 15px 1px;
         margin-bottom: 15px;
     }
 
-    .formul .Subject input {
-        width: 91%;
-        padding: 14px 10px;
-    }
+    
     
     .formul .message textarea {
-        width: 90%;
-        height: 100px;
-        padding: 10px 15px;
+       
     }
-}
 
-/* @media(max-width: 300px){
-    .contactContainer{
-        border: 2px solid orangered;
-    }
-} */
+    .formul .bouton button{
+        width: 90%;
+    } */
+}
